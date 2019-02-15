@@ -1,0 +1,89 @@
+36.0
+45
+accuracy = 0.8
+
+These are initial weights:
+[ 0.  0.  0.  0.  0.  0.  0.  0.][ 0.  0.  0.  0.  0.  0.  0.  0.][ 0.  0.  0.  0.  0.  0.  0.  0.]
+These are final weights(after training):
+[  5.5        -11.11890161  25.68012917   7.52025255   5.82510406
+  16.89038104 -13.22311921 -54.11928898][-12.          52.93787932 -47.38105869 -12.45493274 -17.13496017
+ -22.55078903  14.68049919   3.79637378][  2.6        -38.70305371  14.90803039   0.04687873  16.97231865
+ -12.20911217  10.36347331  44.71730021]
+
+Original and predicted class values:
+1	None	wrong prediction
+1	None	wrong prediction
+1	1
+1	1
+1	1
+1	1
+1	1
+1	1
+1	3	wrong prediction
+1	1
+1	1
+1	1
+1	1
+1	1
+1	3	wrong prediction
+2	2
+2	2
+2	2
+2	2
+2	2
+2	2
+2	2
+2	None	wrong prediction
+2	2
+2	2
+2	None	wrong prediction
+2	2
+2	None	wrong prediction
+2	None	wrong prediction
+2	2
+3	3
+3	3
+3	3
+3	3
+3	3
+3	3
+3	1	wrong prediction
+3	3
+3	3
+3	3
+3	3
+3	3
+3	3
+3	3
+3	3
+Total number of iteration is 1000 and the 
+terminating criteria is 0.001
+
+
+
+confusion matrix:
+
+    p1  p2  p3  pf
+a1  11  0   2   2
+a2  0   11  0   4
+a3  1   0   14  0
+
+a1 --- actual 1
+p1 --- predict 1
+pf --- prediction fail (all 0, None of the classes are selected)
+
+
+precision = (11+11+14) / (11+11+14 + 9) = 36/45 = 4/5 = 80%
+recall = 36 / (36 + 3) = 92%
+
+tool based,
+confusion matrix:
+    p1  p2  p3  pf
+a1  9   2   1   2
+a2  1   13  0   3
+a3  1   0   15  0
+precision = (9+13+15) / (37+8) = 82%
+recall = (37) / (37+5) = 88%
+
+
+
